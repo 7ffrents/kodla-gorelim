@@ -29,6 +29,7 @@ Bu repo, YouTube kanalı **Kodla Görelim** (@kodlagorelim) için Claude'un yür
 
 ## İlk video ve gizlilik kilidi
 İlk video (Monte Carlo π, 2026-11-22) `private` yüklendi; hat çalışıyor ama kilit bu yolla test edilemedi (özel istenip özel çıktı).
+Video 1 sonradan `privacy` iş akışıyla (tools/set_privacy.py, videos.update) herkese açık yapıldı ve YouTube bunu kabul etti (actualPrivacy=public); yeni token geniş izinli (youtube, force-ssl, upload). Yeni yüklemede kilit hâlâ test edilmedi.
 İkinci ve sonraki videolar `privacyStatus: "public"` ile istenir. Her turun başında `state/uploaded.json` içinde `requestedPrivacy` ile `actualPrivacy` farkına bak. Herkese açık istenip video özel çıkarsa API projesi denetlenmemiş demektir. Bu durumda herkese açık yüklemeyi tekrar deneme, yeni video üretme, `state/log.md`'ye yaz ve kullanıcıya bildir (kullanıcı Google'ın API denetim formunu kendisi doldurmalı).
 
 ## Değişmez kurallar
