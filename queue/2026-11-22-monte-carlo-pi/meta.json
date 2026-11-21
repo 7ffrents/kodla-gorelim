@@ -1,0 +1,7 @@
+{
+  "title": "Rastgele noktalarla π sayısını buluyoruz #Shorts",
+  "description": "Bir kareye 20.000 rastgele nokta atıyoruz. Çeyrek daireye düşenleri sayıp 4 ile çarpınca π çıkıyor. Nokta sayısı arttıkça tahmin gerçek değere yaklaşıyor (Monte Carlo yöntemi).\n\nGörüntü Python ile kodla üretilmiştir.\n\nBu video yapay zekâ yardımıyla hazırlanmıştır.",
+  "tags": ["kodla", "pi", "monte carlo", "matematik", "python", "simülasyon", "shorts"],
+  "privacyStatus": "private",
+  "containsSyntheticMedia": false
+}
