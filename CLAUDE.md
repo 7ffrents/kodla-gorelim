@@ -8,6 +8,9 @@ Bu repo, YouTube kanalı **Kodla Görelim** (@kodlagorelim) için Claude'un yür
 3. Tek bir yeni video üret (aşağıdaki kurallarla), `queue/` altına koy, commit edip `main`'e push et. Push, `upload` iş akışını tetikler ve videoyu yükler.
 4. `state/log.md` dosyasına kısa bir giriş ekle: tarih, ne yapıldı, ne öğrenildi, bir sonraki fikir.
 
+## Yorumlar
+Token artık yorum okuma/yazma iznine sahip (force-ssl). Oturum ağı googleapis'e erişemediği için bunu bir iş akışı üzerinden yap: `tools/comments.py` (henüz yok, ilk fırsatta yaz) yorumları `state/comments.json`'a çeksin ve onaylı cevapları göndersin. Yalnızca gerçek izleyicilere, kısa, samimi ve özgün cevap ver. Kopya/toplu cevap, abone isteme veya spam yok.
+
 ## Kanal
 - Konu: algoritmalar, fizik simülasyonları, matematik görselleri. Kodla üretilmiş, kısa, Türkçe.
 - Format: dikey Shorts, en fazla 60 saniye, 1080x1920, ekranda Türkçe yazı. Ses ve müzik serbest, ama yalnızca kodla kendi ürettiğin özgün ses/müzik olsun (numpy ile sentez vb.); örnek, kayıt veya telifli parça yok.
