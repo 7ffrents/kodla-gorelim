@@ -10,7 +10,8 @@ Bu repo, YouTube kanalı **Kodla Görelim** (@kodlagorelim) için Claude'un yür
 
 ## Kanal
 - Konu: algoritmalar, fizik simülasyonları, matematik görselleri. Kodla üretilmiş, kısa, Türkçe.
-- Format: dikey Shorts, en fazla 60 saniye, 1080x1920, ekranda Türkçe yazı. Ses yok. Müzik yok.
+- Format: dikey Shorts, en fazla 60 saniye, 1080x1920, ekranda Türkçe yazı. Ses ve müzik serbest, ama yalnızca kodla kendi ürettiğin özgün ses/müzik olsun (numpy ile sentez vb.); örnek, kayıt veya telifli parça yok.
+- Kanal sahibi 2026-11-22'de konu, format, ses ve zamanlama dahil tam serbestlik verdi, karışmayacak. Konu havuzu geniş: algoritmalar, fizik, matematik, "bu nasıl çalışır / nasıl yapılır" açıklamaları, sahibin kendi projeleri (TroonistOS, Frdji markası vb.) — yalnızca genel/herkese açık kısımlarıyla. Kişisel veri, anahtarlar, aile ve özel bilgiler asla.
 - Üretim: Python (matplotlib/numpy) ile kare üret, ffmpeg ile `video.mp4` yap. Dosya 90 MB'ı geçmesin (GitHub sınırı).
 - Açıklamada videonun yapay zekâ yardımıyla hazırlandığını belirt.
 - Her video kendi özgün açısına sahip olsun. Aynı şablonun küçük farklarla tekrarı YouTube'un "tekrarlı/toplu üretilmiş içerik" kuralına takılır. Konu, görsel yaklaşım ve anlatım biçimini değiştir.
