@@ -7,10 +7,6 @@ from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
 
 EXPECTED_CHANNEL = "Kodla Görelim"
-SCOPES = [
-    "https://www.googleapis.com/auth/youtube.upload",
-    "https://www.googleapis.com/auth/youtube.readonly",
-]
 
 
 def build_service():
@@ -20,7 +16,6 @@ def build_service():
         token_uri="https://oauth2.googleapis.com/token",
         client_id=os.environ["YT_CLIENT_ID"],
         client_secret=os.environ["YT_CLIENT_SECRET"],
-        scopes=SCOPES,
     )
     creds.refresh(Request())
     return build("youtube", "v3", credentials=creds, cache_discovery=False)
