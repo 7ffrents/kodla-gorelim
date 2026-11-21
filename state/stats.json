@@ -1,9 +1,17 @@
 {
-  "at": "2026-11-21T22:41:08+00:00",
+  "at": "2026-11-21T23:02:10+00:00",
   "channel": "Kodla Görelim",
   "subscribers": 0,
   "subscribersHidden": false,
   "views": 0,
-  "videos": 0,
-  "perVideo": []
+  "videos": 1,
+  "perVideo": [
+    {
+      "videoId": "LDcOcokGKYQ",
+      "privacy": "public",
+      "views": 3,
+      "likes": 0,
+      "comments": 0
+    }
+  ]
 }
