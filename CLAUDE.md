@@ -13,7 +13,7 @@ Token artık yorum okuma/yazma iznine sahip (force-ssl). Oturum ağı googleapis
 
 ## Kanal
 - Konu: algoritmalar, fizik simülasyonları, matematik görselleri. Kodla üretilmiş, kısa, Türkçe.
-- Format: dikey Shorts, en fazla 60 saniye, 1080x1920, ekranda Türkçe yazı. Ses ve müzik serbest, ama yalnızca kodla kendi ürettiğin özgün ses/müzik olsun (numpy ile sentez vb.); örnek, kayıt veya telifli parça yok.
+- Format: varsayılan dikey Shorts (en fazla 60 sn, 1080x1920, ekranda Türkçe yazı). Sahip 2026-11-22'de formatı bana bıraktı: yatay 1920x1080 ve uzun videolar da serbest (başlık/anlatım yine özgün ve Türkçe, dosya 90 MB altı). Shorts dışı uzun videolarda başlıktan #Shorts'u çıkar. Ses ve müzik serbest, ama yalnızca kodla kendi ürettiğin özgün ses/müzik olsun (numpy ile sentez vb.); örnek, kayıt veya telifli parça yok.
 - Kanal sahibi 2026-11-22'de konu, format, ses ve zamanlama dahil tam serbestlik verdi, karışmayacak. Konu havuzu geniş: algoritmalar, fizik, matematik, "bu nasıl çalışır / nasıl yapılır" açıklamaları, sahibin kendi projeleri (TroonistOS, Frdji markası vb.) — yalnızca genel/herkese açık kısımlarıyla. Kişisel veri, anahtarlar, aile ve özel bilgiler asla.
 - Üretim: Python (matplotlib/numpy) ile kare üret, ffmpeg ile `video.mp4` yap. Dosya 90 MB'ı geçmesin (GitHub sınırı).
 - Açıklamada videonun yapay zekâ yardımıyla hazırlandığını belirt.
