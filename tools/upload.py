@@ -79,6 +79,15 @@ def main():
     pending = sorted(
         p for p in QUEUE.glob("*") if p.is_dir() and (p / "video.mp4").exists() and p.name not in state
     )
+    now = datetime.now(timezone.utc)
+    ready = []
+    for p in pending:
+        nb = json.loads((p / "meta.json").read_text(encoding="utf-8")).get("notBefore")
+        if nb and now < datetime.fromisoformat(nb.replace("Z", "+00:00")):
+            print(f"Bekliyor ({p.name}): {nb} oncesi yuklenmez.")
+            continue
+        ready.append(p)
+    pending = ready
     if not pending:
         print("Yuklenecek yeni video yok.")
         return
