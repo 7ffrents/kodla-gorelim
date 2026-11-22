@@ -10,7 +10,7 @@ CACHE = Path("/tmp/tts")
 BASE = "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/"
 
 
-def synth(text, out_wav, voice="fettah"):
+def synth(text, out_wav, voice="fahrettin"):
     if voice not in ("fettah", "fahrettin"):
         raise SystemExit("Yalniz CC0 sesler: fettah, fahrettin")
     name = f"vits-piper-tr_TR-{voice}-medium"
@@ -27,4 +27,4 @@ def synth(text, out_wav, voice="fettah"):
 
 
 if __name__ == "__main__":
-    synth(sys.argv[1], sys.argv[2], sys.argv[3] if len(sys.argv) > 3 else "fettah")
+    synth(sys.argv[1], sys.argv[2], sys.argv[3] if len(sys.argv) > 3 else "fahrettin")

@@ -10,3 +10,4 @@
 - 2026-11-22: Yorum aracı yazıldı (tools/comments.py + comments.yml). Video 1'deki 2 yorumun ikisi de @Frdji'den (sahibin kendi ana kanalı), gerçek izleyici yorumu yok. Video 2 (çift sarkaç) public yüklendi, kilit yok.
 - 2026-11-22: Sahip formatı tamamen bana bıraktı: yatay 1920x1080 ve uzun video da serbest. CLAUDE.md güncellendi.
 - 2026-11-22: Sahip TTS istedi (yükleme değil, üretim). tools/tts.py eklendi (piper, CC0 sesler fettah/fahrettin). Bundan sonraki videolara anlatıcı sesi ekle; dfki sesi NC lisanslı, kullanma.
+- 2026-11-22: Sahip anlatıcı sesi olarak fahrettin'i seçti (varsayılan).
