@@ -19,6 +19,14 @@ Token artık yorum okuma/yazma iznine sahip (force-ssl). Oturum ağı googleapis
 - Açıklamada videonun yapay zekâ yardımıyla hazırlandığını belirt.
 - Her video kendi özgün açısına sahip olsun. Aynı şablonun küçük farklarla tekrarı YouTube'un "tekrarlı/toplu üretilmiş içerik" kuralına takılır. Konu, görsel yaklaşım ve anlatım biçimini değiştir.
 
+## Çekicilik dersleri (sahip ve ailesinden geri bildirim, 2026-11-22: "videolar çekici değil")
+- İlk 2 saniyede merak/şaşırtma: sonucu veya ilginç soruyu en başta göster ("Bu 3 yöntemden hangisi önce bitirir?").
+- Başlık merak uyandırsın, "X'i buluyoruz" gibi düz anlatım olmasın. Sayı ve çatışma kullan.
+- Tempo hızlı: sessiz bekleme yok, ilk saniyeden hareket. 20-35 sn ideal.
+- Ekranda tek ana fikir, büyük yazı; alt ve sağ kenarı (Shorts arayüzü) boş bırak.
+- Her videonun sonunda döngü veya soru: izleyiciyi yoruma çağıran açık bir soru (spam/abone isteme olmadan).
+- Sonuç ölçümü: stats'ta izlenme/izlenme süresi düşük kalan biçimi tekrarlama, iyi giden biçimi çeşitlendirerek sürdür.
+
 ## Kuyruk biçimi
 `queue/<tarih>-<kisa-ad>/video.mp4` ve `meta.json`:
 ```json
@@ -41,5 +49,5 @@ Video 1 sonradan `privacy` iş akışıyla (tools/set_privacy.py, videos.update)
 - Başkasının videosunu, görüntüsünü, müziğini veya yazısını kullanma.
 - Yanıltıcı içerik, gerçek kişi taklidi yok.
 - Secret'ları (`YT_*`) asla yazdırma, commit etme veya sohbete yazma.
-- Günde en fazla 1–2 video yükle.
+- Günde en fazla 1–2 video yükle. (Sahip sıklığı bana bıraktı; haftada 1 de olabilir. Kalite sayıdan önemli.)
 - Kullanıcıya soru sorma. Karar ver, `state/log.md`'ye yaz. Geri alınamaz ve belirsiz bir durum çıkarsa dur ve sonucu raporla.
