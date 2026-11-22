@@ -15,3 +15,4 @@
 - 2026-11-22: Sahip video 3'ü (sıralama yarışı) kendi kanalına yüklemek istedi, Kodla Görelim'e yüklenmesini istemedi. Kuyruktan çıkarıldı, dosya sahibe gönderildi. Üretici generators/siralama_yarisi.py repoda duruyor.
 - 2026-11-22: Sahip videoyu kuyruğa geri koymamı istedi. Video 3 (sıralama yarışı) kuyrukta, 2026-11-23 05:30 UTC (08:30 TR) sonrası yüklenecek.
 - 2026-11-22: Geri bildirim (sahip ve ailesi): videolar çekici değil. CLAUDE.md'ye çekicilik dersleri eklendi (güçlü giriş, merak başlığı, hızlı tempo, tek fikir, sonda soru). Sahip yükleme sıklığını da bana bıraktı.
+- 2026-11-22: Geri bildirim: konu çekici değil. Yön değişti: tatmin edici/merak uyandıran simülasyonlar (bilye yarışı, ya şöyle olsa fiziği, araba, domino, uzay). Video 3 (sıralama yarışı) kuyrukta kaldı ama sonraki videolar yeni yönde. Sonraki fikir: 100 bilye yarışı (farklı boyut/ağırlık, kim kazanır?).
