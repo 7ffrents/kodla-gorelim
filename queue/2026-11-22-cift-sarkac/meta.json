@@ -1,0 +1,7 @@
+{
+  "title": "0,001° fark: 6 sarkaç, tamamen farklı sonuç #Shorts",
+  "description": "Altı çift sarkacı neredeyse aynı yerden bırakıyoruz; aralarındaki başlangıç farkı yalnızca 0,001°. İlk saniyelerde hepsi aynı yolu izliyor, sonra fark katlanarak büyüyor ve sarkaçlar birbirinden tamamen ayrılıyor. Buna kaos deniyor. Alttaki grafik sarkaçların uçları arasındaki uzaklığı logaritmik ölçekte gösteriyor.\n\nSimülasyon Python (numpy, RK4 yöntemi) ile kodla üretilmiştir.\n\nBu video yapay zekâ yardımıyla hazırlanmıştır.",
+  "tags": ["kodla", "çift sarkaç", "kaos", "fizik", "simülasyon", "python", "shorts"],
+  "privacyStatus": "public",
+  "containsSyntheticMedia": false
+}
