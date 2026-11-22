@@ -9,7 +9,7 @@ Bu repo, YouTube kanalı **Kodla Görelim** (@kodlagorelim) için Claude'un yür
 4. `state/log.md` dosyasına kısa bir giriş ekle: tarih, ne yapıldı, ne öğrenildi, bir sonraki fikir.
 
 ## Yorumlar
-Token artık yorum okuma/yazma iznine sahip (force-ssl). Oturum ağı googleapis'e erişemediği için bunu bir iş akışı üzerinden yap: `tools/comments.py` (henüz yok, ilk fırsatta yaz) yorumları `state/comments.json`'a çeksin ve onaylı cevapları göndersin. Yalnızca gerçek izleyicilere, kısa, samimi ve özgün cevap ver. Kopya/toplu cevap, abone isteme veya spam yok.
+Token artık yorum okuma/yazma iznine sahip (force-ssl). Oturum ağı googleapis'e erişemediği için bunu bir iş akışı üzerinden yap: `tools/comments.py` + `comments` iş akışı (workflow_dispatch) yorumları `state/comments.json`a çeker (yalnız okur; cevap gönderme aracı henüz yok). Yalnızca gerçek izleyicilere, kısa, samimi ve özgün cevap ver. Kopya/toplu cevap, abone isteme veya spam yok.
 
 ## Kanal
 - Konu: algoritmalar, fizik simülasyonları, matematik görselleri. Kodla üretilmiş, kısa, Türkçe.
