@@ -12,3 +12,4 @@
 - 2026-11-22: Sahip TTS istedi (yükleme değil, üretim). tools/tts.py eklendi (piper, CC0 sesler fettah/fahrettin). Bundan sonraki videolara anlatıcı sesi ekle; dfki sesi NC lisanslı, kullanma.
 - 2026-11-22: Sahip anlatıcı sesi olarak fahrettin'i seçti (varsayılan).
 - 2026-11-22: Video 3 hazır (sıralama yarışı; TTS fahrettin + özgün sentez müzik + sıralama sesleri, 33 sn). Bugün 2 video yüklendiği için tools/upload.py'ye notBefore desteği eklendi; video 2026-11-23 05:30 UTC (08:30 TR) sonrası yüklenecek, upload iş akışına 2 saatlik cron eklendi. Üretici: generators/siralama_yarisi.py. Sonraki fikir: Python'u görsel öğreten kısa seri (izleyici isteği), Collatz ağacı.
+- 2026-11-22: Sahip video 3'ü (sıralama yarışı) kendi kanalına yüklemek istedi, Kodla Görelim'e yüklenmesini istemedi. Kuyruktan çıkarıldı, dosya sahibe gönderildi. Üretici generators/siralama_yarisi.py repoda duruyor.
