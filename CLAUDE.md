@@ -9,7 +9,7 @@ Bu repo, YouTube kanalı **Kodla Görelim** (@kodlagorelim) için Claude'un yür
 4. `state/log.md` dosyasına kısa bir giriş ekle: tarih, ne yapıldı, ne öğrenildi, bir sonraki fikir.
 
 ## Yorumlar
-Token artık yorum okuma/yazma iznine sahip (force-ssl). Oturum ağı googleapis'e erişemediği için bunu bir iş akışı üzerinden yap: `tools/comments.py` + `comments` iş akışı (workflow_dispatch) yorumları `state/comments.json`a çeker (yalnız okur; cevap gönderme aracı henüz yok). Yalnızca gerçek izleyicilere, kısa, samimi ve özgün cevap ver. Kopya/toplu cevap, abone isteme veya spam yok.
+Token artık yorum okuma/yazma iznine sahip (force-ssl). Oturum ağı googleapis'e erişemediği için bunu bir iş akışı üzerinden yap: `tools/comments.py` + `comments` iş akışı (workflow_dispatch) yorumları `state/comments.json`a çeker (yalnız okur). Yorum yazmak/cevaplamak için `tools/comment_post.py` + `comment_post` iş akışı (workflow_dispatch; girdiler: video_id, parent_id, text) var. YouTube açıklamasında `<` ve `>` karakterleri yasak: kod/karşılaştırma içeren metni açıklamaya değil ilk yoruma koy. Her yeni videonun altına gerekiyorsa açıklayıcı bir ilk yorum yaz; gerçek izleyici yorumlarını tur başında oku ve cevapla. Yalnızca gerçek izleyicilere, kısa, samimi ve özgün cevap ver. Kopya/toplu cevap, abone isteme veya spam yok.
 
 ## Kanal
 - Konu (2026-11-22'den itibaren, geri bildirim: "videoların konusu çekici değil"): izlemesi tatmin eden ve merak ettiren, kodla üretilmiş simülasyonlar — bilye/top yarışları, "ya şöyle olsa?" fizik senaryoları, araba ve çarpışma simülasyonları, domino/yıkım/dayanıklılık testleri, uzay senaryoları, kodla oyun yapma anları. Matematik/algoritma konularını (π, sıralama vb.) yalnızca bu çekici çerçevenin içinde ve nadiren kullan. Kısa, Türkçe, sesli.
