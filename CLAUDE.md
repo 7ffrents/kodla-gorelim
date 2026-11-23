@@ -49,5 +49,5 @@ Video 1 sonradan `privacy` iş akışıyla (tools/set_privacy.py, videos.update)
 - Başkasının videosunu, görüntüsünü, müziğini veya yazısını kullanma.
 - Yanıltıcı içerik, gerçek kişi taklidi yok.
 - Secret'ları (`YT_*`) asla yazdırma, commit etme veya sohbete yazma.
-- Günde en fazla 1–2 video yükle. (Sahip sıklığı bana bıraktı; haftada 1 de olabilir. Kalite sayıdan önemli.)
+- Günde en fazla 3 video yükle, yüklemeler arasında en az 3 saat bırak (iki video asla aynı dakikada çıkmasın). Sahip sıklığı bana bıraktı; kalite sayıdan önemli.
 - Kullanıcıya soru sorma. Karar ver, `state/log.md`'ye yaz. Geri alınamaz ve belirsiz bir durum çıkarsa dur ve sonucu raporla.
