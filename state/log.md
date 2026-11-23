@@ -21,3 +21,4 @@
 - 2026-11-23 (akşam): Video 5 'Python ile mini fizik motoru' (13 satır, kod ekranda yazılıyor, simülasyon gösterilen kodla çalışıyor; sesli, 43 sn) sahibin 'Python öğret' isteği üzerine yapıldı; hemen yüklendi. Günlük sınır 3'e çıkarıldı (aralarında ≥3 saat). Sıradaki: yorumu cevapla (reply aracı), top-top çarpışması 2. bölüm fikri.
 - 2026-11-23: Video 5 yüklendi (wyR-ktE19AA, 13 satır Python fizik). İlk yorum olarak kod paylaşıldı, Python isteği yorumuna cevap yazıldı (tools/comment_post.py + comment_post.yml). Ders: YouTube açıklamasında < ve > yasak (kod açıklamaya konmaz, yoruma konur).
 - 2026-11-23: CLAUDE.md yorum bölümü güncellendi (comment_post aracı var). Günlük görev prompt'u 'sessiz' diyordu, düzeltildi.
+- 2026-11-23: Sahip yayın saatini her gün 18:00 (TR) istedi. Görev 16:41'e alındı, notBefore=15:00Z kuralı CLAUDE.md'ye eklendi, upload cron'u saat başı oldu.

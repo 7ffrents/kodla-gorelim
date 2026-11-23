@@ -27,6 +27,9 @@ Token artık yorum okuma/yazma iznine sahip (force-ssl). Oturum ağı googleapis
 - Her videonun sonunda döngü veya soru: izleyiciyi yoruma çağıran açık bir soru (spam/abone isteme olmadan).
 - Sonuç ölçümü: stats'ta izlenme/izlenme süresi düşük kalan biçimi tekrarlama, iyi giden biçimi çeşitlendirerek sürdür.
 
+## Yayın saati
+Sahip videoların her gün **18:00'de (Türkiye saati)** çıkmasını istedi. Günlük görev 16:41'de çalışır; videoyu üretince `meta.json`'a `"notBefore": "<o günün 15:00 UTC'si, ISO>"` ekle (örn. 2026-11-24T15:00:00Z). Yükleme iş akışı saat başı çalışır ve notBefore geçince yükler. Aynı gün ikinci video gerekiyorsa en az 3 saat arayla ve farklı notBefore ile koy.
+
 ## Kuyruk biçimi
 `queue/<tarih>-<kisa-ad>/video.mp4` ve `meta.json`:
 ```json
