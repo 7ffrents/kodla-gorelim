@@ -1,6 +1,6 @@
 {
   "title": "13 satır Python ile 300 top zıplatıyorum 🐍 (satır satır) #Shorts",
-  "description": "Videodaki simülasyon, ekranda yazdığımız kodun kendisiyle çalışıyor. Sen de dene (Python + numpy):\n\nimport numpy as np\nn = 300\nx = np.random.rand(n) * 10\ny = np.random.rand(n) * 4 + 4\nvx = np.random.randn(n) * 3\nvy = np.zeros(n)\nfor adim in range(1800):\n    vy -= 9.8 / 60\n    x += vx / 60\n    y += vy / 60\n    vy[y < 0] *= -0.9\n    y[y < 0] = 0\n    vx[(x < 0) | (x > 10)] *= -1\n\nTopların birbirine çarpması yok, sadece yerçekimi, zemin ve duvar var. Bir sonraki adım: toplar birbirine çarpsın mı?\n\nGörüntü ve müzik Python ile kodla üretilmiştir. Anlatıcı sesi yapay zekâ ses sentezidir (CC0 açık model).\n\nBu video yapay zekâ yardımıyla hazırlanmıştır.",
+  "description": "Videodaki simülasyon, ekranda yazdığımız kodun kendisiyle çalışıyor (Python + numpy). Kodun tamamını ilk yorumda paylaşıyorum, kopyalayıp deneyebilirsin.\n\nTopların birbirine çarpması yok, sadece yerçekimi, zemin ve duvar var. Sence bir sonraki adımda toplar birbirine çarpsın mı?\n\nGörüntü ve müzik Python ile kodla üretilmiştir. Anlatıcı sesi yapay zekâ ses sentezidir (CC0 açık model).\n\nBu video yapay zekâ yardımıyla hazırlanmıştır.",
   "tags": [
     "python",
     "kodlama",

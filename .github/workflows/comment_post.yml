@@ -1,0 +1,43 @@
+name: comment_post
+
+on:
+  workflow_dispatch:
+    inputs:
+      video_id:
+        description: "Video kimligi (ust duzey yorum icin)"
+        required: false
+        default: ""
+      parent_id:
+        description: "Cevap verilecek yorum kimligi (bos ise ust duzey yorum)"
+        required: false
+        default: ""
+      text:
+        description: "Yorum metni"
+        required: true
+
+concurrency:
+  group: youtube
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install google-api-python-client google-auth
+      - name: Yorumu yaz
+        working-directory: tools
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          VIDEO_ID: ${{ inputs.video_id }}
+          PARENT_ID: ${{ inputs.parent_id }}
+          TEXT: ${{ inputs.text }}
+        run: python comment_post.py
