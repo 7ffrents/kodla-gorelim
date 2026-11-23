@@ -22,3 +22,4 @@
 - 2026-11-23: Video 5 yüklendi (wyR-ktE19AA, 13 satır Python fizik). İlk yorum olarak kod paylaşıldı, Python isteği yorumuna cevap yazıldı (tools/comment_post.py + comment_post.yml). Ders: YouTube açıklamasında < ve > yasak (kod açıklamaya konmaz, yoruma konur).
 - 2026-11-23: CLAUDE.md yorum bölümü güncellendi (comment_post aracı var). Günlük görev prompt'u 'sessiz' diyordu, düzeltildi.
 - 2026-11-23: Sahip yayın saatini her gün 18:00 (TR) istedi. Görev 16:41'e alındı, notBefore=15:00Z kuralı CLAUDE.md'ye eklendi, upload cron'u saat başı oldu.
+- 2026-11-23: Düzeltme: sahip yayın saatini sabah 06:00 (TR) istedi (18:00 sanmıştım). Görev 04:41'e alındı, notBefore=03:00Z.
