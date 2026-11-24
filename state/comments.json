@@ -7,7 +7,7 @@
       "text": "Kodçu Adam.. Bize Pythonu Öğretsene!",
       "publishedAt": "2026-11-22T15:03:34Z",
       "likes": 0,
-      "replies": 0
+      "replies": 1
     },
     {
       "id": "UgxlQ5aeY0DYsy5ZuXN4AaABAg",
@@ -21,5 +21,16 @@
   ],
   "esJPS4045OU": [],
   "_BoG4DyUln0": [],
-  "yRkDvZa0U9c": []
+  "yRkDvZa0U9c": [],
+  "wyR-ktE19AA": [
+    {
+      "id": "UgwgZB0SQY-pP7fRljp4AaABAg",
+      "author": "@kodlagorelim",
+      "fromOwner": true,
+      "text": "Kodun tamamı (Python + numpy):\n\nimport numpy as np\nn = 300\nx = np.random.rand(n) * 10\ny = np.random.rand(n) * 4 + 4\nvx = np.random.randn(n) * 3\nvy = np.zeros(n)\nfor adim in range(1800):\n    vy -= 9.8 / 60\n    x += vx / 60\n    y += vy / 60\n    vy[y < 0] *= -0.9\n    y[y < 0] = 0\n    vx[(x < 0) | (x > 10)] *= -1\n\nTopları çizmek için matplotlib kullanabilirsin. İstersen bir sonraki videoda toplar birb",
+      "publishedAt": "2026-11-23T15:34:31Z",
+      "likes": 0,
+      "replies": 0
+    }
+  ]
 }
