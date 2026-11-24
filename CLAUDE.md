@@ -28,7 +28,7 @@ Token artık yorum okuma/yazma iznine sahip (force-ssl). Oturum ağı googleapis
 - Sonuç ölçümü: stats'ta izlenme/izlenme süresi düşük kalan biçimi tekrarlama, iyi giden biçimi çeşitlendirerek sürdür.
 
 ## Yayın saati
-Sahip videoların her gün **sabah 06:00'da (Türkiye saati)** çıkmasını istedi. Günlük görev 04:41'de çalışır; videoyu üretince `meta.json`'a `"notBefore": "<o günün 03:00 UTC'si, ISO>"` ekle (örn. 2026-11-24T03:00:00Z). Yükleme iş akışı saat başı çalışır ve notBefore geçince yükler (06:03 civarı). Aynı gün ikinci video gerekiyorsa en az 3 saat arayla ve farklı notBefore ile koy.
+Sahip videoların her gün **sabah 06:00'da (Türkiye saati)** çıkmasını istedi. Günlük görev 04:41'de çalışır; videoyu üretince `meta.json`'a `"publishAt": "<o günün 03:00 UTC'si, ISO>"` ekle (örn. 2026-11-25T03:00:00Z) ve `privacyStatus` public kalsın. Push'ta yükleme iş akışı videoyu hemen yükler, YouTube kendisi 06:00'da yayınlar (zamanlı yayın; bu yüzden GitHub zamanlayıcısına bağımlı değil). Yükleme sonrası `uploaded.json`'da actualPrivacy "private" ve `scheduledPublishAt` dolu görünür, bu normaldir; gizlilik kilidi kontrolünü zamanlı olmayan kayıtlarla yap. Eski `notBefore` yöntemini kullanma (GitHub cron güvenilmez). Aynı gün ikinci video gerekiyorsa en az 3 saat arayla ve farklı publishAt ile koy.
 
 ## Kuyruk biçimi
 `queue/<tarih>-<kisa-ad>/video.mp4` ve `meta.json`:

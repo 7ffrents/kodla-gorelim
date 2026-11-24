@@ -38,6 +38,12 @@ def upload_one(yt, slug, folder):
     meta = json.loads((folder / "meta.json").read_text(encoding="utf-8"))
     title = meta["title"][:100]
     requested = meta.get("privacyStatus", "private")
+    publish_at = meta.get("publishAt")
+    scheduled = False
+    if publish_at:
+        t = datetime.fromisoformat(publish_at.replace("Z", "+00:00"))
+        if t > datetime.now(timezone.utc) and requested == "public":
+            scheduled = True
     body = {
         "snippet": {
             "title": title,
@@ -47,11 +53,13 @@ def upload_one(yt, slug, folder):
             "defaultLanguage": "tr",
         },
         "status": {
-            "privacyStatus": requested,
+            "privacyStatus": "private" if scheduled else requested,
             "selfDeclaredMadeForKids": False,
             "containsSyntheticMedia": bool(meta.get("containsSyntheticMedia", False)),
         },
     }
+    if scheduled:
+        body["status"]["publishAt"] = publish_at.replace("+00:00", "Z")
     media = MediaFileUpload(str(folder / "video.mp4"), chunksize=-1, resumable=True, mimetype="video/mp4")
     request = yt.videos().insert(part="snippet,status", body=body, media_body=media)
     response = None
@@ -60,7 +68,9 @@ def upload_one(yt, slug, folder):
     video_id = response["id"]
     actual = response.get("status", {}).get("privacyStatus", "?")
     print(f"Yuklendi: {slug} -> https://youtu.be/{video_id} (istenen={requested}, gercek={actual})")
-    if actual != requested:
+    if scheduled:
+        print(f"Zamanli: YouTube {publish_at} aninda herkese acacak (simdilik ozel).")
+    elif actual != requested:
         print(
             f"UYARI: Istenen gizlilik '{requested}' ama video '{actual}' olarak olustu. "
             "API projesi dogrulanmamis olabilir (2020 sonrasi projelerde videolar ozel kilitlenir)."
@@ -70,6 +80,7 @@ def upload_one(yt, slug, folder):
         "title": title,
         "requestedPrivacy": requested,
         "actualPrivacy": actual,
+        **({"scheduledPublishAt": publish_at} if scheduled else {}),
         "uploadedAt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
     }
 
