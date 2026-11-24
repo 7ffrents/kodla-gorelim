@@ -1,44 +1,44 @@
 {
-  "at": "2026-11-23T15:55:16+00:00",
+  "at": "2026-11-24T01:42:13+00:00",
   "channel": "Kodla Görelim",
   "subscribers": 1,
   "subscribersHidden": false,
-  "views": 0,
+  "views": 58,
   "videos": 5,
   "perVideo": [
     {
       "videoId": "LDcOcokGKYQ",
       "privacy": "public",
-      "views": 58,
+      "views": 63,
       "likes": 1,
-      "comments": 2
+      "comments": 3
     },
     {
       "videoId": "esJPS4045OU",
       "privacy": "public",
-      "views": 73,
+      "views": 86,
       "likes": 0,
       "comments": 0
     },
     {
       "videoId": "_BoG4DyUln0",
       "privacy": "public",
-      "views": 228,
-      "likes": 1,
+      "views": 372,
+      "likes": 2,
       "comments": 0
     },
     {
       "videoId": "yRkDvZa0U9c",
       "privacy": "public",
-      "views": 830,
-      "likes": 6,
+      "views": 1130,
+      "likes": 5,
       "comments": 0
     },
     {
       "videoId": "wyR-ktE19AA",
       "privacy": "public",
-      "views": 0,
-      "likes": 0,
+      "views": 120,
+      "likes": 1,
       "comments": 1
     }
   ]
