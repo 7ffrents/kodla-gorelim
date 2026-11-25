@@ -1,0 +1,8 @@
+{
+  "title": "5 tekerlek aynı yokuşta yarışıyor: 4 kat ağır olan neden kazanamadı? #Shorts",
+  "description": "Aynı yokuş, aynı anda bırakılan 5 tekerlek: ince halka, kalın halka, ağırlığı ortada toplanmış bir disk ve iki dolu disk (biri 2 kat büyük, 4 kat ağır). İlk gelen ağırlığı göbeğinde toplayan tekerlek oldu; küçük ve dev dolu diskler ise aynı anda bitirdi.\n\nSebep: tekerlek yuvarlanırken enerjisinin bir kısmı dönmeye gider. Kütle kenara ne kadar yakınsa dönmeye giden pay o kadar büyük olur, yokuştan inme hızı da o kadar düşer. İnce halkada enerjinin yarısı dönmeye gidiyor, ağır göbekli tekerlekte yalnızca yüzde 11'i.\n\nBu bir simülasyondur: kayma yok, hava direnci yok, enerji korunumuyla Python'da hesaplandı. Renkler yalnızca tekerleğin türünü gösterir, sonuçla ilgisi yoktur.\n\nSizce aynı yokuşa sürtünmesiz kayan bir kutu koysak kim kazanırdı? Tahmininizi yorumlara yazın.\n\nGörüntü ve müzik Python ile kodla üretilmiştir. Anlatıcı sesi yapay zekâ ses sentezidir (CC0 açık model).\n\nBu video yapay zekâ yardımıyla hazırlanmıştır.",
+  "tags": ["fizik", "simülasyon", "yuvarlanma", "eylemsizlik momenti", "yokuş yarışı", "python", "kodla", "shorts"],
+  "privacyStatus": "public",
+  "containsSyntheticMedia": false,
+  "publishAt": "2026-11-25T03:00:00Z"
+}
