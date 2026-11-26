@@ -1,0 +1,8 @@
+{
+  "title": "Dünya'yı delip 5 top bıraktım: Hangisi önce karşıya çıkar? #Shorts",
+  "description": "Dünya'yı 5 farklı yerden deldiğimizi düşünelim: en kısa tünel 5.554 km, en uzunu Dünya'nın merkezinden geçen 12.742 km. Beş topu aynı anda bırakıyoruz. Uzun tünelde top 7,9 km/s hıza kadar çıkıyor, kısa tünelde sadece 3,4 km/s. Ama karşı uca hepsi tam aynı anda varıyor: 42,2 dakika.\n\nSebep: Dünya'nın içinde yerçekimi merkeze uzaklıkla orantılı azalır. Bu yüzden tünelin boyunca topu çeken kuvvet yaylı bir sarkaç gibi davranır ve gidiş süresi tünelin uzunluğuna bağlı olmaz. Uzun yol daha çok hızlanma demektir, ikisi tam dengelenir.\n\nBu bir simülasyondur ve iki basitleştirme içerir: Dünya her yerde aynı yoğunlukta kabul edildi, tünellerde hava ve sürtünme yok. Hesap Python ile sayısal entegrasyon yapılarak çözüldü ve formülle doğrulandı. Renkler yalnızca tüneli ayırır, sonuçla ilgisi yoktur.\n\nSizce tünelde hava olsaydı hangi top kazanırdı? Tahmininizi yorumlara yazın.\n\nGörüntü ve müzik Python ile kodla üretilmiştir. Anlatıcı sesi yapay zekâ ses sentezidir (CC0 açık model).\n\nBu video yapay zekâ yardımıyla hazırlanmıştır.",
+  "tags": ["fizik", "simülasyon", "yerçekimi", "Dünya'yı delmek", "tünel", "python", "kodla", "shorts"],
+  "privacyStatus": "public",
+  "containsSyntheticMedia": false,
+  "publishAt": "2026-11-26T03:00:00Z"
+}
