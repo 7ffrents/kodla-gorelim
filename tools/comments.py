@@ -2,6 +2,8 @@
 import json
 from pathlib import Path
 
+from googleapiclient.errors import HttpError
+
 from ytcommon import build_service, verified_channel
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -15,10 +17,15 @@ for slug, rec in up.items():
     items = []
     token = None
     while True:
-        resp = yt.commentThreads().list(
-            part="snippet", videoId=vid, maxResults=50, order="time",
-            textFormat="plainText", pageToken=token,
-        ).execute()
+        try:
+            resp = yt.commentThreads().list(
+                part="snippet", videoId=vid, maxResults=50, order="time",
+                textFormat="plainText", pageToken=token,
+            ).execute()
+        except HttpError as e:
+            # zamanli (henuz yayinlanmamis) videoda yorumlar kapali gorunur; atla, calismayi bozma
+            print(f"{vid}: atlandi ({e.resp.status})")
+            break
         for it in resp.get("items", []):
             top = it["snippet"]["topLevelComment"]
             sn = top["snippet"]
