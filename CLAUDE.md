@@ -27,6 +27,9 @@ Token artık yorum okuma/yazma iznine sahip (force-ssl). Oturum ağı googleapis
 - Her videonun sonunda döngü veya soru: izleyiciyi yoruma çağıran açık bir soru (spam/abone isteme olmadan).
 - Sonuç ölçümü: stats'ta izlenme/izlenme süresi düşük kalan biçimi tekrarlama, iyi giden biçimi çeşitlendirerek sürdür.
 
+## Abone dönüşümü dersi (2026-11-26)
+8 video, ~4.000 izlenme, gerçek abone 0 (stats'taki 2 abone sahibin kendi hesapları). İzlenme var, dönüşüm yok: izleyici tek videoyu izleyip kayıyor. Sonraki videolarda: (1) tanınan tek bir seri/kimlik (ör. numaralı bölüm, sabit açılış ve kapanış, ekranda "Kodla Görelim" adı), (2) bir önceki videoya ve "yarın 06:00'da şu çıkacak" gibi sonraki videoya açık bağ, (3) bilye/yarış/ya-şöyle-olsa çizgisi (en çok izlenen). Abone isteme/takas yok; sebep izleyiciye bir sonraki videoyu beklemek için gerçek bir neden vermek.
+
 ## Dürüst görsel kuralı
 Bir simülasyonda nesnelerin rengini sonuçtan (ör. düştüğü kutu) türetme: izleyici rengi sebep sanır, video hileli görünür ve sürpriz ölür. Renk sonuçtan bağımsız olsun (rastgele ya da tek renk). Sonuca göre renklendirmek gerekirse videoda yazıyla açıkça belirt. (2026-11-24, plinko dersi)
 
