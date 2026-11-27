@@ -1,0 +1,18 @@
+{
+  "title": "Kodla Görelim #9: Zıplayan bilye mi, zıplamayan mı? 60 bilye yarışıyor #Shorts",
+  "description": "Kodla Görelim, Bölüm 9. 60 bilye aynı çivili tahtadan düşüyor. Hepsi aynı boyda; tek fark zıplama gücü: %15'ten %98'e 6 seviye, her seviyeden 10 bilye. Kim önce iner?\n\nBu yarışta en az zıplayan (mavi) bilyelerin yarısı 2,9 saniyede indi, en çok zıplayan (kırmızı) bilyelerin yarısı 6,3 saniyede. Kırmızılar zamanlarının yaklaşık yüzde 25'ini yukarı giderek geçirdi, mavilerde bu yüzde 2.\n\nTek yarış şans eseri olabilir diye aynı deneyi 8 farklı dizilişle tekrarladım (toplam 480 bilye). Ölçüt: her seviyede bilyelerin yarısının inme süresi. Ortalama sonuç: %15 için 3,5 sn, %35 için 4,2, %55 için 4,6, %75 için 5,3, %90 için 5,6, %98 için 5,6 sn. Yani bu simülasyonda zıplama arttıkça iniş yavaşladı. Her bilye çiviye çarptığında enerjinin bir kısmını korur; çok zıplayan bilye o enerjiyi yukarı sekmeye harcar.\n\nRenkler zıplama gücünü gösterir, yarıştan önce verildi ve sonuçla ilgisi yoktur. Fizik basitleştirilmiştir (2 boyutlu, bilye ve çivi çarpışmaları, hava yok).\n\nSizce çivi olmasaydı kim kazanırdı? Yorumlara yazın.\n\nSıradaki: Bölüm 10, yarın sabah 06:00 (Türkiye saati). Dünya tüneline hava koyuyoruz. Önceki bölüm: Dünya'yı delip 5 top bıraktık: https://www.youtube.com/shorts/Fi0f9pmd3Vw\n\nGörüntü ve müzik Python ile kodla üretilmiştir. Anlatıcı sesi yapay zekâ ses sentezidir (CC0 açık model).\n\nBu video yapay zekâ yardımıyla hazırlanmıştır.",
+  "tags": [
+    "bilye",
+    "simülasyon",
+    "fizik",
+    "zıplama",
+    "çarpışma",
+    "python",
+    "kodla",
+    "kodla görelim",
+    "shorts"
+  ],
+  "privacyStatus": "public",
+  "containsSyntheticMedia": false,
+  "publishAt": "2026-11-27T03:00:00Z"
+}

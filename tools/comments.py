@@ -19,7 +19,7 @@ for slug, rec in up.items():
     while True:
         try:
             resp = yt.commentThreads().list(
-                part="snippet", videoId=vid, maxResults=50, order="time",
+                part="snippet,replies", videoId=vid, maxResults=50, order="time",
                 textFormat="plainText", pageToken=token,
             ).execute()
         except HttpError as e:
@@ -37,6 +37,16 @@ for slug, rec in up.items():
                 "publishedAt": sn.get("publishedAt", ""),
                 "likes": sn.get("likeCount", 0),
                 "replies": it["snippet"].get("totalReplyCount", 0),
+                "replyItems": [
+                    {
+                        "id": r["id"],
+                        "author": r["snippet"].get("authorDisplayName", ""),
+                        "fromOwner": r["snippet"].get("authorChannelId", {}).get("value") == ch["id"],
+                        "text": r["snippet"].get("textDisplay", "")[:400],
+                        "publishedAt": r["snippet"].get("publishedAt", ""),
+                    }
+                    for r in it.get("replies", {}).get("comments", [])
+                ],
             })
         token = resp.get("nextPageToken")
         if not token:
