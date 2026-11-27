@@ -7,7 +7,16 @@
       "text": "Kodçu Adam.. Bize Pythonu Öğretsene!",
       "publishedAt": "2026-11-22T15:03:34Z",
       "likes": 0,
-      "replies": 1
+      "replies": 1,
+      "replyItems": [
+        {
+          "id": "UgzVQVQd0Tx0LoEtWoB4AaABAg.AdWaBl6-5pSAdZDeW9-l9p",
+          "author": "@kodlagorelim",
+          "fromOwner": true,
+          "text": "Öğretiyoruz! 13 satır Python ile fizik simülasyonu yaptım, kod ekranda satır satır yazılıyor: https://youtube.com/shorts/wyR-ktE19AA (kodun tamamı videonun ilk yorumunda).",
+          "publishedAt": "2026-11-23T15:35:38Z"
+        }
+      ]
     },
     {
       "id": "UgxlQ5aeY0DYsy5ZuXN4AaABAg",
@@ -16,7 +25,8 @@
       "text": "Bir Efsanein Doğuşu...",
       "publishedAt": "2026-11-21T23:09:52Z",
       "likes": 0,
-      "replies": 0
+      "replies": 0,
+      "replyItems": []
     }
   ],
   "esJPS4045OU": [],
@@ -30,7 +40,8 @@
       "text": "Kodun tamamı (Python + numpy):\n\nimport numpy as np\nn = 300\nx = np.random.rand(n) * 10\ny = np.random.rand(n) * 4 + 4\nvx = np.random.randn(n) * 3\nvy = np.zeros(n)\nfor adim in range(1800):\n    vy -= 9.8 / 60\n    x += vx / 60\n    y += vy / 60\n    vy[y < 0] *= -0.9\n    y[y < 0] = 0\n    vx[(x < 0) | (x > 10)] *= -1\n\nTopları çizmek için matplotlib kullanabilirsin. İstersen bir sonraki videoda toplar birb",
       "publishedAt": "2026-11-23T15:34:31Z",
       "likes": 0,
-      "replies": 0
+      "replies": 0,
+      "replyItems": []
     }
   ],
   "M_h2OestUr4": [
@@ -41,7 +52,8 @@
       "text": "Küçük not: Toplar tamamen rastgele düşüyor, fizik gerçek. Ama topların renklerini simülasyon bittikten sonra, düştükleri kutuya göre ben verdim; yani renk topun nereye gideceğini belirlemiyor, sadece sonucu gökkuşağı gibi gösteriyor. İlk bakışta \"mavi top hep mavi kutuya gidiyor\" gibi görünmesi bu yüzden. Bir dahaki videoda renkleri rastgele vereceğim.",
       "publishedAt": "2026-11-24T05:25:17Z",
       "likes": 0,
-      "replies": 0
+      "replies": 0,
+      "replyItems": []
     }
   ],
   "88fsBDu5NzE": [
@@ -52,8 +64,25 @@
       "text": "Videoda sorduğum sorunun cevabı: kayan kutu kazanırdı. Kutu dönmediği için enerjisinin tamamı ilerlemeye gider, yani hepsinden önce iner (aynı yokuşta yaklaşık 4,2 sn, ağır göbekli tekerlek 5,0 sn). Tekerlekte ise enerjinin bir kısmı dönmeye harcanır. Tahmin yazan herkese teşekkürler!",
       "publishedAt": "2026-11-26T01:46:57Z",
       "likes": 0,
-      "replies": 2
+      "replies": 2,
+      "replyItems": [
+        {
+          "id": "UgxMOVx5B0X3T9vyYJp4AaABAg.AdeTCgO2kQ8AdeTre_LQLG",
+          "author": "@kodlagorelim",
+          "fromOwner": true,
+          "text": "Düzeltme: yukarıda kutunun süresini yanlış yazmışım. Doğrusu yaklaşık 4,7 sn (ağır göbekli tekerlek 5,0 sn). Kutu yine hepsinden önce iniyor, sadece fark küçük. Sayı hatası benden.",
+          "publishedAt": "2026-11-26T01:52:41Z"
+        },
+        {
+          "id": "UgxMOVx5B0X3T9vyYJp4AaABAg.AdeTCgO2kQ8Adeq1AVSi-I",
+          "author": "@Frdji",
+          "fromOwner": false,
+          "text": "@kodlagorelim  zaten hep hata oluyor....",
+          "publishedAt": "2026-11-26T05:15:05Z"
+        }
+      ]
     }
   ],
-  "Fi0f9pmd3Vw": []
+  "Fi0f9pmd3Vw": [],
+  "UMIzrMmrAhI": []
 }
