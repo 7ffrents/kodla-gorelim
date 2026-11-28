@@ -1,0 +1,17 @@
+{
+  "title": "Kodla Görelim #10: Dünya tüneline hava koydum, 42 dakika 42 saat oldu #Shorts",
+  "description": "Kodla Görelim, Bölüm 10. Geçen bölümde Dünya'yı delip 5 top bırakmıştık: tünelde hava yoksa hepsi aynı anda, 42 dakikada karşıya çıkıyordu. Bu bölümde tünele hava koydum.\n\nSonuç: havasız 42 dakika süren yolculuk havayla 42 saate çıktı ve hiçbir top karşıya çıkamadı. 42 dakika sonunda toplar yalnızca 91 ile 138 km yol gitmişti.\n\nTopların tünelin ortasına varış süreleri: 5.554 km'lik en kısa tünel 42,2 saat, 7.645 km'lik tünel 49,5 saat, 10.642 km'lik tünel 58,5 saat, 11.678 km'lik tünel 61,3 saat, Dünya'nın tam içinden geçen 12.742 km'lik tünel 64,0 saat. Hava topa bir hız sınırı koyuyor; sınırda ilerlerken yolu kısa olan önce varıyor. Hava enerji harcattığı için top hiçbir zaman başladığı yüksekliğe geri çıkamaz, yani karşı uca ulaşamaz.\n\nVarsayımlar (basitleştirme): Dünya her yerde aynı yoğunlukta, hava yoğunluğu da her yerde yeryüzündeki gibi, topun uç hızı 55 m/s (yaklaşık 200 km/sa), sürtünme hızın karesiyle artıyor. Hesap Python ile yapıldı (RK4), sonuç yarım adımla da aynı çıktı.\n\nHavayı yarıya indirsem biri karşıya çıkar mıydı? Tahminini yorumlara yaz.\n\nSıradaki: Bölüm 11, yarın sabah 06:00 (Türkiye saati). Domino.\nÖnceki bölümler: Bölüm 8, Dünya'yı delip 5 top bıraktık: https://www.youtube.com/shorts/Fi0f9pmd3Vw\nBölüm 9, Zıplayan bilye mi, zıplamayan mı: https://www.youtube.com/shorts/UMIzrMmrAhI\n\nGörüntü ve müzik Python ile kodla üretilmiştir. Anlatıcı sesi yapay zekâ ses sentezidir (CC0 açık model).\n\nBu video yapay zekâ yardımıyla hazırlanmıştır.",
+  "tags": [
+    "dünya tüneli",
+    "hava direnci",
+    "simülasyon",
+    "fizik",
+    "python",
+    "kodla",
+    "kodla görelim",
+    "shorts"
+  ],
+  "privacyStatus": "public",
+  "containsSyntheticMedia": false,
+  "publishAt": "2026-11-28T03:00:00Z"
+}
